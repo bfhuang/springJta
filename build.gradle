@@ -1,0 +1,22 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.2.RELEASE'
+    id 'java'
+    id 'idea'
+}
+
+compileJava {
+    sourceCompatibility = '1.8'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web",
+            'org.springframework.boot:spring-boot-starter-actuator'
+
+
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+}
