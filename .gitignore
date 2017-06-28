@@ -2,3 +2,4 @@ springBoot.*
 /build/**
 /out/**
 /logs/**
+/.gradle
