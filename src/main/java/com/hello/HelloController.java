@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    private static final Logger logger = LoggerFactory.getLogger(Exception.class);
+    private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     @Autowired
     private FooProperties properties;
@@ -20,6 +20,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public FooProperties home() {
         logger.info("hello controller begin");
+        logger.debug("hello controller begin");
 
         return properties;
     }

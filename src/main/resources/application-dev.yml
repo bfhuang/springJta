@@ -14,3 +14,7 @@ foo:
 server:
   port: 8080
   contextPath: /dev
+
+logging:
+  level.root: INFO
+  file: log/dev.log

@@ -3,3 +3,4 @@ springBoot.*
 /out/**
 /logs/**
 /.gradle
+/log
