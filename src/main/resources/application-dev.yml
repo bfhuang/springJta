@@ -1,5 +1,16 @@
+foo:
+  menus:
+    - title: dev
+      name: dev
+      path: /
+    - title: dev
+      name: dev
+      path: /dev
+  compiler:
+    timeout: 5
+    output-folder: /temp/
+  error: /dev/
 
 server:
-        context-path: /hellodev
-
-
+  port: 8080
+  contextPath: /dev

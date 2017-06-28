@@ -1,12 +1,13 @@
 foo:
   menus:
-    - title: Home
-      name: Home
+    - title: default
+      name: default
       path: /
-    - title: Login
-      name: Login
-      path: /login
+    - title: default
+      name: default
+      path: /default
   compiler:
     timeout: 5
     output-folder: /temp/
-  error: /error/
+  error: /default/
+

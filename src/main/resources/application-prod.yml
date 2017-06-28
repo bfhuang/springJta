@@ -1,5 +1,16 @@
+foo:
+  menus:
+    - title: prod
+      name: prod
+      path: /
+    - title: prod
+      name: prod
+      path: /prod
+  compiler:
+    timeout: 5
+    output-folder: /temp/
+  error: /prod/
 
 server:
-       context-path: /helloprod
-
-
+  port: 8080
+  contextPath: /prod
