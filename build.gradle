@@ -14,7 +14,11 @@ repositories {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web",
-            'org.springframework.boot:spring-boot-starter-actuator'
+            'org.springframework.boot:spring-boot-starter-actuator',
+//            this is the dependency for spring data jpa
+            'org.springframework.boot:spring-boot-starter-data-jpa',
+            'com.h2database:h2',
+            'mysql:mysql-connector-java'
 
 
 

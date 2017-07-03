@@ -19,3 +19,11 @@ logging:
   level.root: INFO
   level.com.controller: DEBUG
   path: log
+
+spring.jpa.hibernate.ddl-auto: update
+spring.jpa.show-sql: true
+spring.datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/jpa
+  username: root
+  password:
