@@ -21,6 +21,8 @@ dependencies {
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
 
+
+//this is to enable the profile property -Dspring.profiles.active=dev
 bootRun {
     systemProperties System.properties
 }

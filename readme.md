@@ -37,3 +37,10 @@ logging.level.org.springframework.web=DEBUG
 logging.level.org.hibernate=ERROR
 ```
 refer log config in prod profile and in dev profile.
+## static content
+you can access index page by adding index.html at the end of the context url
+* By default Spring Boot will serve static content from a directory called /static (or /public or /resources or /META-INF/resources) in the classpath or from the root of the ServletContext
+* By default, resources are mapped on /** but you can tune that via spring.mvc.static-path-pattern, for instance
+```
+spring.mvc.static-path-pattern=/resources/**
+```
