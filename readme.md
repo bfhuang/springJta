@@ -49,3 +49,4 @@ HelloController /exception path will throw Some exception and this exception wil
  convert it to CustomerErrorType
 ## spring data jpa
 * crudRepository and pageableSortableRepository and also different profile use different database
+* the repository [name convension and sql convension](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
