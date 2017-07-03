@@ -44,3 +44,6 @@ you can access index page by adding index.html at the end of the context url
 ```
 spring.mvc.static-path-pattern=/resources/**
 ```
+## Controller advice example
+HelloController /exception path will throw Some exception and this exception will be handled by GlobalAdvice and
+ convert it to CustomerErrorType

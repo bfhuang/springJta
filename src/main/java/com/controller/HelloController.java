@@ -1,12 +1,9 @@
-package com.hello;
+package com.controller;
 
 import com.property.FooProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,13 +14,20 @@ public class HelloController {
     @Autowired
     private FooProperties properties;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/controller")
     public FooProperties home() {
-        logger.info("hello controller begin");
-        logger.debug("hello controller begin");
+        logger.info("controller controller begin");
+        logger.debug("controller controller begin");
 
         return properties;
     }
+
+
+    @RequestMapping("/exception")
+    public void error() throws SomeException {
+        throw new SomeException("exception happened");
+    }
+
 
     public FooProperties getProperties() {
         return properties;

@@ -17,5 +17,5 @@ server:
 
 logging:
   level.root: INFO
-  level.com.hello: DEBUG
+  level.com.controller: DEBUG
   path: log
