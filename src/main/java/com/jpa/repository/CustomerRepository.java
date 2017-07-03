@@ -18,7 +18,7 @@ public interface CustomerRepository extends CrudRepository<Customer, Long> , Pag
     List<Customer> readByLastName(String lastName);
 
 
-//    @Query("select * from customer where firstName = ?1")
+    @Query(value="select * from customer  where first_name like %?1%", nativeQuery = true)
     List<Customer> getByFirstName(String firstName);
 
 //    Page<Customer> findAll(Pageable page);
