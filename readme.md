@@ -50,3 +50,4 @@ HelloController /exception path will throw Some exception and this exception wil
 ## spring data jpa
 * crudRepository and pageableSortableRepository and also different profile use different database, all files are under com.jpa directory
 * the repository [name convension and sql convension](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
+* [one-to-many and many-to-many relationships](https://gigsterous.github.io/engineering/2016/09/25/spring-boot-2.html)
