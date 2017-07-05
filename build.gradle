@@ -18,10 +18,11 @@ dependencies {
 //            this is the dependency for spring data jpa
             'org.springframework.boot:spring-boot-starter-data-jpa',
             'com.h2database:h2',
-            'mysql:mysql-connector-java'
+            'mysql:mysql-connector-java',
 //           this is the dependency for spring security
 //            'org.springframework.boot:spring-boot-starter-security',
 //            'org.springframework.security.oauth:spring-security-oauth2'
+            'org.apache.activemq:activemq-all:5.9.0'
 
 
 
@@ -29,12 +30,11 @@ dependencies {
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
 
-
 //this is to enable the profile property -Dspring.profiles.active=dev
 bootRun {
     systemProperties System.properties
 }
 
-task wrapper(type: Wrapper){
+task wrapper(type: Wrapper) {
     gradleVersion = '4.0'
 }

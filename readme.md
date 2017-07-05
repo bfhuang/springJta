@@ -51,3 +51,7 @@ HelloController /exception path will throw Some exception and this exception wil
 * crudRepository and pageableSortableRepository and also different profile use different database, all files are under com.jpa directory
 * the repository [name convension and sql convension](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
 * [one-to-many and many-to-many relationships](https://gigsterous.github.io/engineering/2016/09/25/spring-boot-2.html)
+## activemq example
+* you have to start up activemq first by running: activemq
+* [queue to queue](https://javainsider.wordpress.com/tag/jms-with-activemq-sample-example/)
+* [Topic](https://www.codenotfound.com/2014/11/jms-publish-subscribe-messaging-example-activemq-maven.html)

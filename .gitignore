@@ -4,3 +4,4 @@ springBoot.*
 /logs/**
 /.gradle
 /log
+/activemq-data
