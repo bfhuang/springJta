@@ -32,4 +32,11 @@ public class PartyController {
 
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<?> addParty(@RequestBody Party party) {
+        party.getPeople().stream().forEach(people-> people.getSkills().forEach(skill -> skill.setPerson(people)));
+        return new ResponseEntity<>(repository.save(party), HttpStatus.CREATED);
+    }
+
 }

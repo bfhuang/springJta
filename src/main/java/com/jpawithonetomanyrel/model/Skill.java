@@ -1,6 +1,7 @@
 package com.jpawithonetomanyrel.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
@@ -18,8 +19,9 @@ public class Skill {
     @Enumerated(EnumType.STRING)
     private Level level;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn (name="person_id")
+//    @JsonIgnoreProperties(value = "person", allowSetters = true)  bu work
     @JsonBackReference
     private Person person;
 
