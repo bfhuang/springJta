@@ -24,7 +24,7 @@ public class CustomerValidator implements Validator {
         CustomerVO customerVO = (CustomerVO) target;
 
         if (repository.exists(customerVO.getId())) {
-            errors.reject("001", "customer with given id already exist" );
+            errors.rejectValue("id", "customer with given id already exist" );
         }
     }
 }
