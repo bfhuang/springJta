@@ -1,40 +1,22 @@
-package com.validation;
+package com.twodb;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
+import javax.persistence.Column;
 
 /**
  * Created by bfhuang on 7/6/17.
  */
-
-@JsonInclude(JsonInclude.Include.NON_NULL)
 public class CustomerVO {
 
-    private long id;
-
-    @NotBlank(message = "first name should not be blank")
+    private Long id;
     private String firstName;
-    @NotEmpty(message = "last name should not be empty")
     private String lastName;
     private int age;
 
-    private AddressVO address;
-
-
-    public AddressVO getAddress() {
-        return address;
-    }
-
-    public void setAddress(AddressVO address) {
-        this.address = address;
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

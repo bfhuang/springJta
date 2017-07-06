@@ -15,14 +15,11 @@ repositories {
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web",
             'org.springframework.boot:spring-boot-starter-actuator',
-//            this is the dependency for spring data jpa
+//            this is the dependency for spring data primarydb
             'org.springframework.boot:spring-boot-starter-data-jpa',
             'com.h2database:h2',
             'mysql:mysql-connector-java',
-//           this is the dependency for spring security
-//            'org.springframework.boot:spring-boot-starter-security',
-//            'org.springframework.security.oauth:spring-security-oauth2'
-            'org.apache.activemq:activemq-core:5.7.0'
+            'org.springframework.boot:spring-boot-starter-jta-atomikos'
 
 
 

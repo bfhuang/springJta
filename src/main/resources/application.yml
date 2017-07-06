@@ -1,17 +1,22 @@
-foo:
-  menus:
-    - title: default
-      name: default
-      path: /
-    - title: default
-      name: default
-      path: /default
-  compiler:
-    timeout: 5
-    output-folder: /temp/
-  error: /default/
+server:
+  port: 8080
+  contextPath: /jta
+
+logging:
+  level.root: INFO
+  level.com.controller: DEBUG
+  path: log
+
+spring.jpa.show-sql: true
 
 spring.datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/jpaprod
+  username: root
+  password:
+
+
+second.datasource:
    url: jdbc:h2:mem:AZ;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
    driverClassName: org.h2.Driver
    username: sa

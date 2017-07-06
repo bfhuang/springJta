@@ -1,23 +1,26 @@
-package com.validation;
+package com.seconddb;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="customer")
-public class CustomerDO {
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Table(name = "customer")
+public class SecondCustomer {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "first_name")
     private String firstName;
+    @Column(name = "last_name")
     private String lastName;
     private int age;
 
-    protected CustomerDO() {}
+    protected SecondCustomer() {}
 
-    public CustomerDO(String firstName, String lastName) {
+    public SecondCustomer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
