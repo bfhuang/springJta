@@ -1,6 +1,7 @@
 package com.activemq;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.springframework.web.client.RestTemplate;
 
 import javax.jms.*;
 
@@ -10,18 +11,18 @@ import javax.jms.*;
 public class QueueAndTopicExample {
 
     public static void main(String[] args) throws JMSException, InterruptedException {
-//        thread(new HelloWorldProducer(), false);
-//        thread(new HelloWorldProducer(), false);
-//        Thread.sleep(2000);
-//        thread(new HelloWorldConsumer(), false);
-//        thread(new HelloWorldConsumer(), false);
-//        Thread.sleep(3000);
+        thread(new HelloWorldProducer(), false);
+        thread(new HelloWorldProducer(), false);
+        Thread.sleep(2000);
+        thread(new HelloWorldConsumer(), false);
+        thread(new HelloWorldConsumer(), false);
+        Thread.sleep(3000);
 
 //the subscriber can only receive the message send to the topic after the subscriber has established
-        thread(new HelloWorldSubscriber(), false);
-        thread(new HelloWorldSubscriber(), false);
-        thread(new HelloWorldPublisher(), false);
-        Thread.sleep(2000);
+//        thread(new HelloWorldSubscriber(), false);
+//        thread(new HelloWorldSubscriber(), false);
+//        thread(new HelloWorldPublisher(), false);
+//        Thread.sleep(2000);
 
     }
 

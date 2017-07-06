@@ -55,3 +55,7 @@ HelloController /exception path will throw Some exception and this exception wil
 * you have to start up activemq first by running: activemq
 * [queue to queue](https://javainsider.wordpress.com/tag/jms-with-activemq-sample-example/)
 * [Topic](https://www.codenotfound.com/2014/11/jms-publish-subscribe-messaging-example-activemq-maven.html)
+## resttemplate example
+* json serialization ignore null value(@JsonInclude(JsonInclude.Include.NON_NULL))
+* resttempalte get a list of product (Customer[].class)
+* [the guide to resttemplate](http://www.baeldung.com/rest-template)

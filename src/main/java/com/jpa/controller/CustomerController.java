@@ -28,7 +28,7 @@ public class CustomerController {
 
 
     @RequestMapping(value = "/customers/customer", method = RequestMethod.GET)
-    public Iterable<Customer> findCustomerByLastName(@RequestParam(value = "firstName", required = false) String firstName,
+    public List<Customer> findCustomerByLastName(@RequestParam(value = "firstName", required = false) String firstName,
                                                      @RequestParam(value = "lastName", required = false) String lastName)
             throws SomeException {
 
@@ -49,5 +49,11 @@ public class CustomerController {
     public Customer save(@RequestBody Customer customer) {
         Customer save = repository.save(customer);
         return save;
+    }
+
+
+    @RequestMapping("/customers/{id}")
+    public Customer getCustomerById(@PathVariable("id") Long id){
+       return repository.findOne(id) ;
     }
 }
