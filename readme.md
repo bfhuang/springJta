@@ -59,3 +59,6 @@ HelloController /exception path will throw Some exception and this exception wil
 * json serialization ignore null value(@JsonInclude(JsonInclude.Include.NON_NULL))
 * resttempalte get a list of product (Customer[].class)
 * [the guide to resttemplate](http://www.baeldung.com/rest-template)
+## validation example
+* examples are under com.validation directory
+* [good tutorial](http://www.bbenson.co/post/spring-validations-with-examples/)
