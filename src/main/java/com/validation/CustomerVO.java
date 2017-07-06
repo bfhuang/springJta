@@ -1,7 +1,6 @@
 package com.validation;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -19,6 +18,17 @@ public class CustomerVO {
     @NotEmpty(message = "last name should not be empty")
     private String lastName;
     private int age;
+
+    private AddressVO address;
+
+
+    public AddressVO getAddress() {
+        return address;
+    }
+
+    public void setAddress(AddressVO address) {
+        this.address = address;
+    }
 
     public long getId() {
         return id;

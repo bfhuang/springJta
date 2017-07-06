@@ -62,3 +62,4 @@ HelloController /exception path will throw Some exception and this exception wil
 ## validation example
 * examples are under com.validation directory
 * [good tutorial](http://www.bbenson.co/post/spring-validations-with-examples/)
+* [spring validation docs, we can have separate validator for nested object](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/validation.html)
